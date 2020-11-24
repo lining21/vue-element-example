@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+
+@import "./element-ui/index";
+// @import "./terms-rich";
+@import "./iconfont/iconfont.css";
+
+html,
+body {
+  min-width: 1366px;
+  font-family: PingFangSC;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  -webkit-touch-callout: none;
+}
+
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+figure,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset,
+a img,
+.bor0 {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+u,
+s,
+del {
+  text-decoration: none;
+}
+
+i,
+em,
+b {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a img {
+  border: 0;
+}
+
+
+input,
+textarea,
+table,
+div {
+  outline: none;
+  box-sizing: border-box;
+}
+
+
+// 设滚动条样式
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar:hover {
+  display: block;
+}
+
+/*滑块*/
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(#eee, 30%);
+  background: rgba(#ccc, 0.8);
+}
+
+/*滑块效果*/
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(#eee, 30%);
+  background: rgba(#ccc, 1);
+}
+input::-webkit-input-placeholder{
+  color: #7f7f7f!important;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  color: #7f7f7f!important;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  color: #7f7f7f!important;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+  color: #7f7f7f!important;
+}
+
+// 公共样式
+.common-box {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 10px 0px rgba(227, 237, 246, 0.54);
+  border-radius: 0px 10px 10px 10px;
+  flex: 1;
+  -moz-box-flex: 1;
+  // 设置选择条件 input select等统一宽度
+  .filter {
+    height: 65px;
+    margin: 0 30px;
+    .item {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+    .el-select {
+      width: 150px;
+    }
+    .el-date-editor--daterange.el-input__inner {
+      width: 280px;
+    }
+  }
+
+  .el-table {
+    border-radius: 0px 0px 10px 10px;
+    // 设置表格选中样式
+    .select-class {
+      color: #4DA1FF !important;
+    }
+    .disabled-class {
+      td {
+        background: #F4F8FE !important;
+      }
+    }
+    // 设置表格图标样式
+    .file-name {
+      display: inline-block;
+      img {
+        width: 16px;
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 4px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.law-box{
+  width: calc(100% - 38px);
+  padding-top: 30px;
+  height: calc(100% - 65px);
+  // 设置选择条件 input select等统一宽度
+  .filter {
+    height: 65px;
+    margin: 0 20px;
+    .item {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+    .el-select {
+      width: 150px;
+    }
+    .el-date-editor--daterange.el-input__inner {
+      width: 280px;
+    }
+  }
+  .el-table {
+    border-radius: 0px 0px 10px 10px;
+    // 设置表格选中样式
+    .select-class {
+      color: #4DA1FF !important;
+    }
+    .disabled-class {
+      td {
+        background: #F4F8FE !important;
+      }
+    }
+    // 设置表格图标样式
+    .file-name {
+      display: inline-block;
+      img {
+        width: 16px;
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 4px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+// 文字前的蓝色条 - 有这个等价的div组件a-tip - 但是有的地方不能div -> 用这个
+.before_bgcolor_blue_lio::before {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  content: '';
+  width: 2px;
+  height: 1em;
+  background: #2CA2FF;
+  margin-right: .5em;
+}
+.el-textarea {
+  .el-textarea__inner {
+    transition: border-color 0s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}
+.homeMain{
+  height:100%;
+  background: #fff;
+  border-radius: 8px;
+}

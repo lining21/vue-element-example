@@ -1,0 +1,205 @@
+{
+  "id": "2056470",
+  "name": "amos",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "amos矢量图标库",
+  "glyphs": [
+    {
+      "icon_id": "18051630",
+      "name": "新增出国任务",
+      "font_class": "cgrw",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "18051591",
+      "name": "发起公文",
+      "font_class": "fqgw",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "18051574",
+      "name": "草稿箱",
+      "font_class": "cgx",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "17888382",
+      "name": "适航论坛",
+      "font_class": "-shlt",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "17888383",
+      "name": "综合分析",
+      "font_class": "-zhfx",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "17083607",
+      "name": "SDR",
+      "font_class": "-sdr",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "17083608",
+      "name": "OEM",
+      "font_class": "-oem",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "17083546",
+      "name": "适航指令",
+      "font_class": "-shzl",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "17083524",
+      "name": "在线学习",
+      "font_class": "-zxxx",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "17083481",
+      "name": "通用类检查",
+      "font_class": "-tyljc",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "17083468",
+      "name": "人员资质",
+      "font_class": "-ryzz",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "17083358",
+      "name": "国籍适航证件",
+      "font_class": "-gjshzj",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "17083271",
+      "name": "标准化检查",
+      "font_class": "-bzhjc",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "17083102",
+      "name": "基础数据",
+      "font_class": "-jcsj",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "17083105",
+      "name": "立法",
+      "font_class": "-lf",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "17083106",
+      "name": "个人信息管理",
+      "font_class": "-grxxgl",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "17083107",
+      "name": "培训管理",
+      "font_class": "-pxgl",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "17083111",
+      "name": "适航资料库",
+      "font_class": "-shzlk",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "17083113",
+      "name": "项目管理文件",
+      "font_class": "-xmglwj",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "17083114",
+      "name": "审定项目管理",
+      "font_class": "-sdxmgl",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "17083115",
+      "name": "无人机",
+      "font_class": "-wrj",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "17083116",
+      "name": "意见处理",
+      "font_class": "-yjcl",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "17083117",
+      "name": "申请人管理",
+      "font_class": "-sqrgl",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "17083118",
+      "name": "证件补录",
+      "font_class": "-zjbl",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "17083121",
+      "name": "证件信息",
+      "font_class": "-zjxx",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "17083122",
+      "name": "行政管理",
+      "font_class": "-xzgl",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "17083001",
+      "name": "标准计量",
+      "font_class": "-bzjl",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "17077155",
+      "name": "amos_home",
+      "font_class": "-sy",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

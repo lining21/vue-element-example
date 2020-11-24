@@ -1,0 +1,19 @@
+/**
+* 文本溢出省略号显示
+* row 允许最大行数
+*/
+@mixin textOverflow($row:3) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $row;
+  -webkit-box-orient: vertical;
+}
+/**
+ * flex 布局
+ */
+@mixin disFlex($justify:flex-start, $align:stretch) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}

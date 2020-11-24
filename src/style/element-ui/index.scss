@@ -1,0 +1,117 @@
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import '~element-ui/packages/theme-chalk/src/index';
+
+// 修改表格默认样式
+.el-table {
+  font-size: 14px;
+}
+
+.el-table th {
+  font-weight: 400;
+  color: #666666;
+}
+.el-table td {
+  border-bottom: none;
+}
+.el-table--small th,
+.el-table--small td {
+  padding: 12px 0;
+}
+//表格斑马纹样式
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background: #f4f6f8;
+}
+//表格hover样式
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background: #f4f8fe;
+}
+// 表格空数据定位
+.el-table__empty-block {
+  position: relative;
+}
+
+// 修改弹框默认样式
+.el-dialog {
+  border-radius: 10px;
+  .el-dialog__body {
+    padding: 30px 30px 20px;
+  }
+  .el-dialog__header {
+    padding: 20px 0px;
+    margin: 0 30px;
+    position: relative;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .dialog-footer {
+    display: flex;
+    justify-content: center;
+    .el-button {
+      width: 120px;
+      height: 35px;
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+// 修改树型tree组件的默认样式
+.el-tree-node__content {
+  height: 50px;
+}
+
+// 设置按钮长度
+.knowledge_base{
+  .el-button {
+    width: 120px;
+  }
+  .el-upload-list{
+    width: 350px;
+  }
+}
+// 顶部菜单样式修改
+.el-menu--horizontal > .el-menu-item:not(.is-disabled):hover,
+.el-menu--horizontal > .el-menu-item:not(.is-disabled):focus {
+  background-color: transparent;
+}
+.el-menu--horizontal > .el-submenu.is-active .el-submenu__title{
+  color: #ffffff;
+}
+.el-menu--horizontal > .el-submenu:focus .el-submenu__title,
+.el-menu--horizontal > .el-submenu:hover .el-submenu__title{
+  color: #ffffff;
+}
+
+.el-tooltip__popper.is-light.toolTipClass{
+  border: 1px solid #4DA1FF;
+  color:rgba(77,161,255,1);
+  background-color: #EFF7FF;
+}
+.el-tooltip__popper.is-light.toolTipClass .popper__arrow{
+  border-color: #4DA1FF transparent;  //placement="top"时
+}
+.el-tooltip__popper.is-light.rejectToolClass{
+  font-size: 16px;
+  line-height: 26px;
+  border: 1px solid #FF586E;
+  color:#FF586E;
+  background-color: #FFF5F6;
+  padding: 13px 20px;
+  max-width: 500px;
+}
+.el-tooltip__popper.is-light.rejectToolClass .popper__arrow{
+  border-color: #FF586E transparent;  //placement="top"时
+}
+.el-message{
+  min-width: auto;
+}
+.blueBorder{
+  border: 1px solid #4DA1FF;
+  color: #4DA1FF;
+  &:hover{
+    border: 1px solid #4DA1FF;
+  }
+}
+

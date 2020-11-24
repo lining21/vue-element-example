@@ -29,7 +29,7 @@ module.exports = {
       new SpeedMeasurePlugin(),
       new webpack.ContextReplacementPlugin(
         /moment[/\\]locale$/,
-        /zh-cn/,
+        /zh-cn/
       )
 
     ]
