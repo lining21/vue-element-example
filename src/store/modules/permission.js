@@ -7,6 +7,7 @@ const state = {
 
 const mutations = {
   SET_ROUTES: (state, routes) => {
+    console.log('constantRoutes', constantRoutes);
     state.addRoutes = routes;
     state.routes = constantRoutes.concat(routes);
   }
@@ -18,6 +19,7 @@ const actions = {
       // let accessedRoutes;
       // if (roles.includes('admin')) {
       const accessedRoutes = asyncRoutes || [];
+      console.log('accessedRoutes', accessedRoutes);
       // } else {
       //   accessedRoutes = filterAsyncRoutes(asyncRoutes, roles);
       // }

@@ -1,27 +1,20 @@
 <template>
   <div v-if="!item.hidden">
     <template v-if="hasOneShowingChild(item.children,item) && (!onlyOneChild.children||onlyOneChild.noShowingChildren)&&!item.alwaysShow">
-      <!-- <app-link
-        v-if="onlyOneChild.meta"
-        :to="resolvePath(onlyOneChild.path)"
-      > -->
-      <router-link
+      <app-link
         v-if="onlyOneChild.meta"
         :to="resolvePath(onlyOneChild.path)"
       >
-        <template>
-          <el-menu-item
-            :index="resolvePath(onlyOneChild.path)"
-            :class="{'submenu-title-noDropdown':!isNest}"
-          >
-            <item
-              :icon="onlyOneChild.meta.icon||(item.meta&&item.meta.icon)"
-              :title="onlyOneChild.meta.title"
-            />
-          </el-menu-item>
-        </template>
-      </router-link>
-      <!-- </app-link> -->
+        <el-menu-item
+          :index="resolvePath(onlyOneChild.path)"
+          :class="{'submenu-title-noDropdown':!isNest}"
+        >
+          <item
+            :icon="onlyOneChild.meta.icon||(item.meta&&item.meta.icon)"
+            :title="onlyOneChild.meta.title"
+          />
+        </el-menu-item>
+      </app-link>
     </template>
 
     <el-submenu
@@ -53,10 +46,12 @@
 import path from 'path';
 import { isExternal } from '@/utils/validate';
 import Item from './Item';
+import AppLink from './Link';
+// import FixiOSBug from './FixiOSBug';
 
 export default {
   name: 'SidebarItem',
-  components: { Item },
+  components: { Item, AppLink },
   // mixins: [FixiOSBug],
   props: {
     // route object
@@ -79,16 +74,7 @@ export default {
     this.onlyOneChild = null;
     return {};
   },
-  watch: {
-    item: {
-      handler(newVal, oldVal) {
-        console.log(newVal, oldVal);
-      },
-      immediate: true
-    }
-  },
   methods: {
-    // 不是只有一个的时候，即有多个会返回false；
     hasOneShowingChild(children = [], parent) {
       const showingChildren = children.filter((item) => {
         if (item.hidden) {

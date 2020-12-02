@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-
+@import './variables.scss';
+@import './transition.scss';
+@import './sidebar.scss';
 @import "./element-ui/index";
 // @import "./terms-rich";
 @import "./iconfont/iconfont.css";

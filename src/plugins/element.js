@@ -63,9 +63,11 @@ import {
   CollapseItem,
   Transfer,
   InfiniteScroll,
-  Divider
+  Divider,
+  Scrollbar
 } from 'element-ui';
 import CollapseTransition from 'element-ui/lib/transitions/collapse-transition';
+
 [
   Button, // element - Button
   Badge, // element - Badge
@@ -127,7 +129,8 @@ import CollapseTransition from 'element-ui/lib/transitions/collapse-transition';
   CollapseItem,
   Transfer,
   InfiniteScroll,
-  Divider
+  Divider,
+  Scrollbar
 ].forEach((comp) => {
   Vue.use(comp);
 });

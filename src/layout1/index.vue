@@ -3,11 +3,25 @@
     :class="classObj"
     class="app-wrapper"
   >
+    <!-- <div
+      v-if="sidebar.opened"
+      class="drawer-bg"
+      @click="handleClickOutside"
+    /> -->
     <sidebar class="sidebar-container" />
     <div
+
       class="main-container"
     >
+      <!-- :class="{hasTagsView:needTagsView}" -->
+      <!-- <div :class="{'fixed-header':fixedHeader}">
+        <navbar />
+        <tags-view v-if="needTagsView" />
+      </div> -->
       <app-main />
+      <!-- <right-panel v-if="showSettings">
+        <settings />
+      </right-panel> -->
     </div>
   </div>
 </template>
@@ -19,15 +33,35 @@ import {
   AppMain, Sidebar
   // TagsView, Navbar, Settings
 } from './components';
+import ResizeMixin from './mixin/ResizeHandler';
 
 export default {
   name: 'Layout',
   components: {
     AppMain,
     Sidebar
+    // Navbar,
+    // RightPanel,
+    // Settings,
+    // TagsView
   },
+  // mixins: [ResizeMixin],
   computed: {
-    ...mapState({})
+    ...mapState({
+      // sidebar: (state) => state.app.sidebar,
+      // device: (state) => state.app.device,
+      // showSettings: (state) => state.settings.showSettings,
+      // needTagsView: (state) => state.settings.tagsView,
+      // fixedHeader: (state) => state.settings.fixedHeader
+    }),
+    classObj() {
+      return {
+        // hideSidebar: !this.sidebar.opened,
+        // openSidebar: this.sidebar.opened,
+        // withoutAnimation: this.sidebar.withoutAnimation,
+        // mobile: this.device === 'mobile'
+      };
+    }
   },
   methods: {
     handleClickOutside() {
@@ -46,6 +80,11 @@ export default {
     position: relative;
     height: 100%;
     width: 100%;
+
+    &.mobile.openSidebar {
+      position: fixed;
+      top: 0;
+    }
   }
 
   .drawer-bg {

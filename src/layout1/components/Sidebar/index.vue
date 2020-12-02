@@ -1,5 +1,9 @@
 <template>
-  <div>
+  <div :class="{'has-logo':showLogo}">
+    <logo
+      v-if="showLogo"
+      :collapse="isCollapse"
+    />
     <el-scrollbar wrap-class="scrollbar-wrapper">
       <el-menu
         :default-active="activeMenu"
@@ -17,9 +21,6 @@
           :item="route"
           :base-path="route.path"
         />
-        <!-- el-submenu
-        el-menu-item-group
-        el-menu-item -->
       </el-menu>
     </el-scrollbar>
   </div>
@@ -27,11 +28,12 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import variables from '@/style/variables.scss';
+// import variables from '@/styles/variables.scss';
+import Logo from './Logo';
 import SidebarItem from './SidebarItem';
 
 export default {
-  components: { SidebarItem },
+  components: { SidebarItem, Logo },
   computed: {
     ...mapGetters([
       'permission_routes',
@@ -46,11 +48,17 @@ export default {
       }
       return path;
     },
+    showLogo() {
+      // return this.$store.state.settings.sidebarLogo;
+      return true;
+    },
     variables() {
-      return variables;
+      // return variables;
+      return {};
     },
     isCollapse() {
-      return !this.sidebar.opened;
+      // return !this.sidebar.opened;
+      return false;
     }
   }
 };

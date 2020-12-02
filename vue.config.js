@@ -2,6 +2,11 @@ const pxtorem = require('postcss-pxtorem');
 const webpack = require('webpack');
 const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
 const GitRevisionPlugin = require('git-revision-webpack-plugin');
+const path = require('path');
+
+function resolve(dir) {
+  return path.join(__dirname, dir);
+}
 
 module.exports = {
   publicPath: './',
@@ -45,6 +50,23 @@ module.exports = {
       .end()
       .use('vue-loader')
       .loader('vue-loader')
+      .end();
+
+    // set svg-sprite-loader
+    config.module
+      .rule('svg')
+      .exclude.add(resolve('src/icons'))
+      .end();
+    config.module
+      .rule('icons')
+      .test(/\.svg$/)
+      .include.add(resolve('src/icons'))
+      .end()
+      .use('svg-sprite-loader')
+      .loader('svg-sprite-loader')
+      .options({
+        symbolId: 'icon-[name]'
+      })
       .end();
   },
   // productionSourceMap: false, // 打包时去除map文件
